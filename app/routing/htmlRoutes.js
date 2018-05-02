@@ -64,19 +64,31 @@ module.exports = function(app) {
         console.log(petScoreDiff);
 
 
+        // set a number that's outrageously high. we'll change this in the next loop to whatever number is lowest in the difference array
         let matchNum = 100;
 
+        // initialize variable that will tell us what the index is of the final pet match
         let matchIndex;
 
+        // loop through the difference array
         petScoreDiff.forEach(score => {
+            // if the score is less than the matchNum,
             if (score < matchNum) {
+
+                // change the matchNum to the score. this will ensure we have the lowest difference
                 matchNum = score;
+
+                // pull out the index of the array item so we can then identify the correct pet
                 matchIndex = petScoreDiff.indexOf(score);
             }
         })
 
         console.log(matchNum);
         console.log(matchIndex);
+        console.log(pets[matchIndex]);
+
+        let modal = document.getElementById("modal");
+        
     })
 
 }
