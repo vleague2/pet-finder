@@ -11,23 +11,28 @@
 <body>
     <div class="container pt-4 mt-3 mb-2" id="survey">
         <h1 class="display-4 text-center">Questions</h1>
-        <p class="text-center">Please rate how much you agree with the following statements.</p>
+        <p class="text-center">Please rate how much the pet matches the following metrics.</p>
         <hr class="my-4">
 
         <div class="container" id="questions-box">
         
-            <div class="row justify-content-center">
-                <div class="form-group row">
-                    <label for="name" class="col-sm-2 col-form-label">Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="name" placeholder="Name">
-                    </div>
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 offset-sm-2 col-form-label">Name</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="file" class="col-sm-2 offset-sm-2 col-form-label">Upload a photo of this pet</label>
+                <div class="col-sm-4">
+                    <input type="file" class="form-control-file" id="file">
                 </div>
             </div>
 
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer1" class="question"><span class="badge badge-info">1.</span> I want my pet to be fairly independent. </label>
+                    <label for="answer1" class="question"><span class="badge badge-info">1.</span> This pet is independent.</label>
                     <select class="form-control" id="answer1">
                         <option>Strongly Disagree</option>
                         <option>Disagree</option>
@@ -40,7 +45,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer2" class="question"><span class="badge badge-info">2.</span> I want a high-energy pet. </label>
+                    <label for="answer2" class="question"><span class="badge badge-info">2.</span> This pet is high-energy and/or playful. </label>
                     <select class="form-control" id="answer2">
                         <option>Strongly Disagree</option>
                         <option>Disagree</option>
@@ -53,7 +58,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer3" class="question"><span class="badge badge-info">3.</span> I prefer to keep my home very clean. </label>
+                    <label for="answer3" class="question"><span class="badge badge-info">3.</span> This pet rarely sheds and/or is very clean. </label>
                     <select class="form-control" id="answer3">
                         <option>Strongly Disagree</option>
                         <option>Disagree</option>
@@ -63,10 +68,11 @@
                     </select>
                 </div>
             </div>
-                
+            
+
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer4" class="question"><span class="badge badge-info">4.</span> I want my pet to be affectionate. </label>
+                    <label for="answer4" class="question"><span class="badge badge-info">4.</span> This pet is affectionate. </label>
                     <select class="form-control" id="answer4">
                         <option>Strongly Disagree</option>
                         <option>Disagree</option>
@@ -75,51 +81,51 @@
                         <option>Strongly Agree</option>
                     </select>
                 </div>
-            </div>
+            </div>           
+
 
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer5" class="question"><span class="badge badge-info">5.</span> I want to raise the pet myself. </label>
+                    <label for="answer5" class="question"><span class="badge badge-info">5.</span> Please select the age range for this pet. </label>
                     <select class="form-control" id="answer5">
-                        <option>Strongly Disagree</option>
-                        <option>Disagree</option>
-                        <option>Neutral</option>
-                        <option>Agree</option>
-                        <option>Strongly Agree</option>
+                        <option>8+</option>
+                        <option>6-8</option>
+                        <option>4-6</option>
+                        <option>2-4</option>
+                        <option>0-2</option>
                     </select>
                 </div>
-            </div>
+            </div> 
 
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer6" class="question"><span class="badge badge-info">5.</span> I don’t have the ability to care for a pet with health problems or disabilities. </label>
+                    <label for="answer6" class="question"><span class="badge badge-info">6.</span> Please rate the level of this pet’s disability/health issues on a scale of 1-5, where 1 is none and 5 is major. </label>
                     <select class="form-control" id="answer6">
-                        <option>Strongly Disagree</option>
-                        <option>Disagree</option>
-                        <option>Neutral</option>
-                        <option>Agree</option>
-                        <option>Strongly Agree</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
                     </select>
                 </div>
-            </div>
+            </div> 
 
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer7" class="question"><span class="badge badge-info">7.</span> I want a large pet. </label>
+                    <label for="answer7" class="question"><span class="badge badge-info">7.</span> Please select a size range for this pet. </p> </label>
                     <select class="form-control" id="answer7">
-                        <option>Strongly Disagree</option>
-                        <option>Disagree</option>
-                        <option>Neutral</option>
-                        <option>Agree</option>
-                        <option>Strongly Agree</option>
+                        <option>Miniature</option>
+                        <option>Small</option>
+                        <option>Medum</option>
+                        <option>Large</option>
+                        <option>Huge</option>
                     </select>
                 </div>
-            </div>
-
+            </div> 
 
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer8" class="question"><span class="badge badge-info">8.</span> I want a pet that is generally calm. </label>
+                    <label for="answer8" class="question"><span class="badge badge-info">8.</span> This pet is never aggressive. </p> </label>
                     <select class="form-control" id="answer8">
                         <option>Strongly Disagree</option>
                         <option>Disagree</option>
@@ -132,7 +138,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer9" class="question"><span class="badge badge-info">9.</span> I have other pets that my new pet will need to get along with. </label>
+                    <label for="answer9" class="question"><span class="badge badge-info">9.</span> This pet gets along with other animals. </p> </label>
                     <select class="form-control" id="answer9">
                         <option>No</option>
                         <option>Yes</option>
@@ -142,7 +148,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-8 offset-sm-2 text-center">
-                    <label for="answer10" class="question"><span class="badge badge-info">10.</span> My pet needs to be child-friendly. </label>
+                    <label for="answer10" class="question"><span class="badge badge-info">10.</span> This pet is friendly with children. </p> </label>
                     <select class="form-control" id="answer10">
                         <option>No</option>
                         <option>Yes</option>
@@ -151,21 +157,19 @@
             </div>
 
 
-
             <div class="row justify-content-center">
-                <a class="btn btn-info btn-lg mt-4 text-center mb-5" href="#" role="button">See Your Result! <i class="fas fa-caret-right"></i> </a> 
+                <a class="btn btn-info btn-lg mt-4 text-center mb-5" href="#" role="button">Add This Pet <i class="fas fa-caret-right"></i> </a> 
             </div>
             
         </div>  
-
-
-
-    </div>
     
-    <div class="container mb-3" id="foot">
-        <a href="/addpet">Add a pet</a> | <a href="#">API Pet List</a> | <a href="#">Github Repo</a>
-    </div>
     
+    
+        </div>
+        
+        <div class="container mb-3" id="foot">
+            <a href="/addpet">Add a pet</a> | <a href="#">API Pet List</a> | <a href="#">Github Repo</a>
+        </div>
 
 </body>
 </html>
