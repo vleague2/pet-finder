@@ -7,9 +7,9 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use('/app/public', express.static('public'))
+require("./app/routing/htmlRoutes")(app);
 
-
+app.use(express.static(path.join(__dirname, './app/public')));
 
 // START APP
 app.listen(PORT, () => {
