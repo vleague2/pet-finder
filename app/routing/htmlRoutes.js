@@ -36,8 +36,6 @@ module.exports = function(app) {
         ]
         console.log(user);
 
-        let userName = req.body.name;
-
         // initialize userTotal variable so we can add to it
         let userTotal = 0;
 
@@ -99,6 +97,10 @@ module.exports = function(app) {
 
         // send the pet match to the client side
         res.send(pets[matchIndex]);
+    })
+
+    app.get("*", (req, res) => {
+        res.sendFile(path.join(__dirname, "../public/home.html"));
     })
 
 }

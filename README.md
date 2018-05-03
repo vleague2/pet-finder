@@ -1,21 +1,7 @@
 # pet-finder
 
-TO DO
 
-eliza and eleanor pics/descr
-
-remove or find a way to use the name field (if so, input validation)
-
-find a way to make the modal close button redirect to homepage
-
-link github repo
-
-catch-all route to home page
-
-add a header nav with logo
-
-
-LATER
+future development
 add everything into sql database
 
 revisit the addpet page and make it add to the database
@@ -27,3 +13,5 @@ way to add pet to favorites
 link pets to shelters
 
 add other kinds of pets
+
+reconfigure with handlebars

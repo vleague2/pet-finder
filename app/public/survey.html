@@ -6,13 +6,19 @@
     <title>Pet Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container pt-4 mt-3 mb-2" id="survey">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/"><i class="fas fa-paw"></i> Orlando Pet Finder</a>
+    </nav>
+
+    <div class="container pt-4 mt-4 mb-2" id="survey">
         <h1 class="display-4 text-center">Questions</h1>
         <p class="text-center">Please rate how much you agree with the following statements.</p>
         <hr class="my-4">
@@ -20,17 +26,9 @@
         <div class="container" id="questions-box">
         
             <form id="surveyform">
-                <div class="row justify-content-center">
-                    <div class="form-group row">
-                        <label for="name" class="col-sm-2 col-form-label">Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="name" placeholder="Name">
-                        </div>
-                    </div>
-                </div>
-
+                
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer1" class="question"><span class="badge badge-info">1.</span> I want my pet to be fairly independent. </label>
                         <select class="form-control" id="answer1">
                             <option value="1">Strongly Disagree</option>
@@ -43,7 +41,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer2" class="question"><span class="badge badge-info">2.</span> I want a high-energy pet. </label>
                         <select class="form-control" id="answer2">
                             <option value="1">Strongly Disagree</option>
@@ -56,7 +54,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer3" class="question"><span class="badge badge-info">3.</span> I prefer to keep my home very clean. </label>
                         <select class="form-control" id="answer3">
                             <option value="1">Strongly Disagree</option>
@@ -69,7 +67,7 @@
                 </div>
                     
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer4" class="question"><span class="badge badge-info">4.</span> I want my pet to be affectionate. </label>
                         <select class="form-control" id="answer4">
                             <option value="1">Strongly Disagree</option>
@@ -82,7 +80,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer5" class="question"><span class="badge badge-info">5.</span> I want to raise the pet myself. </label>
                         <select class="form-control" id="answer5">
                             <option value="1">Strongly Disagree</option>
@@ -95,7 +93,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer6" class="question"><span class="badge badge-info">5.</span> I don’t have the ability to care for a pet with health problems or disabilities. </label>
                         <select class="form-control" id="answer6">
                             <option value="1">Strongly Disagree</option>
@@ -108,7 +106,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer7" class="question"><span class="badge badge-info">7.</span> I want a large pet. </label>
                         <select class="form-control" id="answer7">
                             <option value="1">Strongly Disagree</option>
@@ -122,7 +120,7 @@
 
 
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer8" class="question"><span class="badge badge-info">8.</span> I want a pet that is generally calm. </label>
                         <select class="form-control" id="answer8">
                             <option value="1">Strongly Disagree</option>
@@ -135,7 +133,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer9" class="question"><span class="badge badge-info">9.</span> I have other pets that my new pet will need to get along with. </label>
                         <select class="form-control" id="answer9">
                             <option value="1">No</option>
@@ -145,7 +143,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-sm-8 offset-sm-2 text-center">
+                    <div class="col-sm-8 offset-sm-2">
                         <label for="answer10" class="question"><span class="badge badge-info">10.</span> My pet needs to be child-friendly. </label>
                         <select class="form-control" id="answer10">
                             <option value="1">No</option>
@@ -157,7 +155,7 @@
 
 
                 <div class="row justify-content-center">
-                    <button type="submit" class="btn btn-info btn-lg mt-4 text-center mb-5" id="submit">See Your Results!<i class="fas fa-caret-right"></i></button>
+                    <button type="submit" class="btn btn-info btn-lg mt-4 text-center mb-5" id="submit">See Your Results! <i class="fas fa-caret-right"></i></button>
                 </div>
             </form>
         </div>  
@@ -167,7 +165,7 @@
     </div>
     
     <div class="container mb-3" id="foot">
-        <a href="/api/pets">API Pet List</a> | <a href="#">Github Repo</a>
+        <a href="/api/pets">API Pet List</a> | <a href="https://github.com/vleague2/pet-finder">Github Repo</a>
     </div>
     
 
@@ -187,8 +185,8 @@
                     <p id="petInfo" class="text-center"></p>
                     <img id="petImg" width="100%">
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close-btn">Don't like your result? Take the quiz again!</button>
                 </div>
             </div>
         </div>
@@ -201,7 +199,6 @@
             event.preventDefault();
 
             let userData = {
-                name: $("#name").val().trim(),
                 scores: [
                     $("#answer1").val(),
                     $("#answer2").val(),
@@ -217,10 +214,13 @@
             };
 
         $.post("/api/survey", userData, (data) => {
-            console.log(data);
             $("#petName").text(data.name);
             $("#petInfo").text(data.descr);
             $("#petImg").attr('src', data.photo);
+        })
+
+        $("#close-btn").on("click", (event) => {
+            window.location.href = "/survey";
         })
     }) 
     </script>

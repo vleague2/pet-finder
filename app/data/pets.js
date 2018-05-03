@@ -1,7 +1,7 @@
 let pets = [
     {
-        "name": "Eliza",
-        "photo": "",
+        "name": "Elisa",
+        "photo": "../assets/images/elisa.jpg",
         "scores": [5, 5, 4, 3, 5, 5, 2, 4, 2, 2],
         "total": 37,
         "descr": "Eliza is a 1-year-old kitty who likes to cuddle and play with her teddy bear. She's declawed and loves to eat. She's friendly to both adults and children. She can be a little clumsy, so heights aren't a great choice for her."
