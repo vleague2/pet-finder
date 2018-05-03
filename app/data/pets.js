@@ -22,9 +22,10 @@ let pets = [
     },
     {
         "name": "Eleanor",
-        "photo": "",
+        "photo": "../assets/images/eleanor.jpg",
         "scores": [3, 5, 2, 5, 5, 5, 3, 1, 2, 2],
-        "total": 33
+        "total": 33,
+        "descr": "Eleanor is a 1-year-old cat who sto look out windows. She loves to cuddle in the morning and play with her new cherry toy. Eleanor is friendly to everyone and always wants to eat more food!"
     },
     {
         "name": "Peaches",

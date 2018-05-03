@@ -4,25 +4,33 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const pets = require('../data/pets');
 
+// export all of the following things
 module.exports = function(app) {
+
+    // when the user goes to home, load the home page
     app.get("/", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/home.html"));
     })
     
-    app.get("/addpet", (req, res) => {
-        res.sendFile(path.join(__dirname, "../public/addpet.html"));
-    })
+    // this currently does not work without a database
+    // app.get("/addpet", (req, res) => {
+    //     res.sendFile(path.join(__dirname, "../public/addpet.html"));
+    // })
     
+    // when user goes to /survey, load the html file
     app.get("/survey", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     })
     
+    // when user goes to api/pets, return a json of the pets array
     app.get("/api/pets", (req, res) => {
         return res.json(pets);
     })
 
+    // listen for a post from the form
     app.post('/api/survey', (req, res) => {
         
+        // pull out the user's answers from the ajax request
         let user = [
             parseInt(req.body.scores[0]), parseInt(req.body.scores[1]), parseInt(req.body.scores[2]), parseInt(req.body.scores[3]), parseInt(req.body.scores[4]), parseInt(req.body.scores[5]), parseInt(req.body.scores[6]), parseInt(req.body.scores[7]), parseInt(req.body.scores[8]), parseInt(req.body.scores[9])
         ]
@@ -89,13 +97,8 @@ module.exports = function(app) {
         console.log(matchIndex);
         console.log(pets[matchIndex]);
 
+        // send the pet match to the client side
         res.send(pets[matchIndex]);
-
-        // let modal = document.getElementById("modal");
-
-        // modal.appendChild(pets[matchIndex]);
-
-        // res.end();
     })
 
 }

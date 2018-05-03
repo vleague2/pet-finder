@@ -10,6 +10,9 @@ find a way to make the modal close button redirect to homepage
 
 link github repo
 
+catch-all route to home page
+
+add a header nav with logo
 
 
 LATER
