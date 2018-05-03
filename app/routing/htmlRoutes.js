@@ -21,12 +21,14 @@ module.exports = function(app) {
         return res.json(pets);
     })
 
-    app.post('/survey', (req, res) => {
-        res.send("Great");
+    app.post('/api/survey', (req, res) => {
+        
         let user = [
-            parseInt(req.body.answer1), parseInt(req.body.answer2), parseInt(req.body.answer3), parseInt(req.body.answer4), parseInt(req.body.answer5), parseInt(req.body.answer6), parseInt(req.body.answer7), parseInt(req.body.answer8), parseInt(req.body.answer9), parseInt(req.body.answer10)
+            parseInt(req.body.scores[0]), parseInt(req.body.scores[1]), parseInt(req.body.scores[2]), parseInt(req.body.scores[3]), parseInt(req.body.scores[4]), parseInt(req.body.scores[5]), parseInt(req.body.scores[6]), parseInt(req.body.scores[7]), parseInt(req.body.scores[8]), parseInt(req.body.scores[9])
         ]
         console.log(user);
+
+        let userName = req.body.name;
 
         // initialize userTotal variable so we can add to it
         let userTotal = 0;
@@ -87,8 +89,13 @@ module.exports = function(app) {
         console.log(matchIndex);
         console.log(pets[matchIndex]);
 
-        let modal = document.getElementById("modal");
-        
+        res.send(pets[matchIndex]);
+
+        // let modal = document.getElementById("modal");
+
+        // modal.appendChild(pets[matchIndex]);
+
+        // res.end();
     })
 
 }
