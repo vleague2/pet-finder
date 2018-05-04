@@ -2,7 +2,7 @@
 
 The Orlando Pet Finder web application is intended for use by local residents looking to adopt a pet from a nearby animal shelter. The user takes a 10-question quiz about the kind of pet they want, and the app matches them with an animal in the system that best matches their lifestyle.
 
-![PetFinder image](app/public/assets/images/screenshot1.png)=
+![PetFinder image](app/public/assets/images/screenshot1.png)
 
 ![PetFinder image](app/public/assets/images/screenshot2.png)
 
